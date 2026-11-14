@@ -1,0 +1,103 @@
+{
+  "name": "NaijaBase",
+  "version": "0.1.0",
+  "description": "Open, machine-readable data on Nigeria's places, people, and government.",
+  "updated": "2026-11-14",
+  "license": {
+    "data": "CC-BY-4.0",
+    "code": "MIT"
+  },
+  "stats": "docs/STATS.md",
+  "datasets": [
+    {
+      "id": "states",
+      "path": "data/base/states.json",
+      "format": "array",
+      "entity": "state",
+      "granularity": "state",
+      "primaryKey": "id",
+      "description": "Nigeria's 36 states plus the Federal Capital Territory, with zone, capital, LGA count, and polling-unit totals."
+    },
+    {
+      "id": "lgas",
+      "path": "data/base/lgas.json",
+      "format": "array",
+      "entity": "lga",
+      "granularity": "local-government-area",
+      "primaryKey": "id",
+      "description": "Local Government Areas with parent state, ward count, area, and polling-unit totals."
+    },
+    {
+      "id": "wards",
+      "path": "data/location/wards.json",
+      "format": "array",
+      "entity": "ward",
+      "granularity": "ward",
+      "primaryKey": "parentLgaId + ward",
+      "description": "Flat list of wards with centroid coordinates, parent LGA, and polling-unit counts."
+    },
+    {
+      "id": "wards-by-lga",
+      "path": "data/location/wards-by-lga.json",
+      "format": "object",
+      "entity": "ward-index",
+      "granularity": "local-government-area",
+      "primaryKey": "LGA id",
+      "description": "Lookup of ward names keyed by LGA id."
+    },
+    {
+      "id": "zones",
+      "path": "data/base/places-zones.json",
+      "format": "object",
+      "entity": "geopolitical-zone",
+      "granularity": "zone",
+      "primaryKey": "regionId",
+      "description": "Editorial character summaries for the six geopolitical zones."
+    },
+    {
+      "id": "state-languages",
+      "path": "data/base/state-languages.json",
+      "format": "object",
+      "entity": "language",
+      "granularity": "state",
+      "primaryKey": "state id",
+      "description": "Indicative language lists per state, with optional Wikipedia links."
+    },
+    {
+      "id": "festivals",
+      "path": "data/base/festivals.json",
+      "format": "array",
+      "entity": "festival",
+      "granularity": "state",
+      "primaryKey": "id",
+      "description": "Curated cultural festivals with timing, venue, category, and summary."
+    },
+    {
+      "id": "parties",
+      "path": "data/politics/parties.json",
+      "format": "object",
+      "entity": "political-party",
+      "granularity": "national",
+      "primaryKey": "abbreviation",
+      "description": "INEC-registered political parties with names and logo URLs."
+    },
+    {
+      "id": "senatorial-districts",
+      "path": "data/politics/constituencies/senatorial-districts.json",
+      "format": "array",
+      "entity": "senatorial-district",
+      "granularity": "district",
+      "primaryKey": "id",
+      "description": "The 109 senatorial districts and the LGAs that make up each."
+    },
+    {
+      "id": "federal-constituencies",
+      "path": "data/politics/constituencies/federal-constituencies.json",
+      "format": "array",
+      "entity": "federal-constituency",
+      "granularity": "constituency",
+      "primaryKey": "id",
+      "description": "The 360 federal constituencies, their parent senatorial district, LGAs, and review flag."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use NaijaBase in research, teaching, or a product, please cite it as below."
+title: "NaijaBase: Open data for Nigeria's places, people, and government"
+version: 0.1.0
+date-released: "2026-11-14"
+url: "https://github.com/vearse/NaijaBase"
+repository-code: "https://github.com/vearse/NaijaBase"
+license: MIT
+authors:
+  - name: "NaijaBase contributors"
+type: dataset
+keywords:
+  - Nigeria
+  - open data
+  - administrative boundaries
+  - wards
+  - civic data
+abstract: >-
+  NaijaBase is a community-maintained, machine-readable dataset covering
+  Nigeria's 36 states and Federal Capital Territory, local government areas,
+  wards, geopolitical zones, languages, festivals, political parties,
+  senatorial districts, and federal constituencies.

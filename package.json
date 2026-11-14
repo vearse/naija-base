@@ -1,0 +1,43 @@
+{
+  "name": "naijabase",
+  "version": "0.1.0",
+  "description": "Open, machine-readable data on Nigeria's places, people, and government.",
+  "keywords": [
+    "nigeria",
+    "naija",
+    "open-data",
+    "dataset",
+    "geography",
+    "states",
+    "lgas",
+    "wards",
+    "elections",
+    "civic-tech"
+  ],
+  "homepage": "https://github.com/vearse/NaijaBase#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vearse/NaijaBase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vearse/NaijaBase/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "data",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "validate:strict": "node scripts/validate.mjs --strict",
+    "stats": "node scripts/stats.mjs",
+    "stats:write": "node scripts/stats.mjs --write",
+    "test": "node scripts/validate.mjs"
+  }
+}
