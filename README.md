@@ -8,7 +8,7 @@
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 NaijaBase is a community-maintained dataset covering Nigeria's full
-administrative chain — **37 states and the FCT, 773 LGA records, and 8,809
+administrative chain — **37 states and the FCT, 774 LGA records, and 8,809
 wards** — together with geopolitical zones, languages, festivals, political
 parties, senatorial districts, and federal constituencies.
 
@@ -58,7 +58,7 @@ find, join, and reuse, with clear IDs and a review trail.
 | Dataset | File | Shape | Records |
 |---------|------|-------|--------:|
 | States + FCT | `data/base/states.json` | array | 37 |
-| Local Government Areas | `data/base/lgas.json` | array | 773 |
+| Local Government Areas | `data/base/lgas.json` | array | 774 |
 | Wards | `data/location/wards.json` | array | 8,809 |
 | Ward-by-LGA index | `data/location/wards-by-lga.json` | object | 774 keys |
 | Geopolitical zones | `data/base/places-zones.json` | object | 6 |
@@ -76,7 +76,7 @@ and the full field reference is in
 
 - **36 states + Federal Capital Territory**
 - **6 geopolitical zones**
-- **773 LGA records** (774 official; see caveats)
+- **774 LGA records** (official INEC administrative count)
 - **8,809 wards** with centroid coordinates
 - **176,623 polling units** (aggregate counts only, not individual records)
 - **109 senatorial districts**
@@ -138,7 +138,7 @@ curl https://raw.githubusercontent.com/vearse/NaijaBase/main/data/base/states.js
 Nigeria
 ├── Geopolitical zone (6)
 │   └── State / FCT (37)            data/base/states.json
-│       └── LGA (773)               data/base/lgas.json
+│       └── LGA (774)               data/base/lgas.json
 │           └── Ward (8,809)        data/location/wards.json
 │
 └── Senatorial district (109)       data/politics/constituencies/senatorial-districts.json
@@ -277,8 +277,6 @@ currently reports the following **warnings** (not failures):
   `pollingUnitCount`.
 - **Duplicate ward names.** 11 `(LGA, ward)` pairs appear more than once,
   reflecting splits or source duplication.
-- **LGA total.** `lgas.json` has 773 records against the official 774; Cross
-  River has 17 recorded LGAs where the state's `lgaCount` is 18.
 - **State-name spelling.** Base files use `Nassarawa`; constituency files use
   the official `Nasarawa`. The validator accepts both as aliases.
 - **Missing capitals.** 28 states have `capital: null`.

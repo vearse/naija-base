@@ -871,10 +871,10 @@
     "senatorial_district_id": "cross-river-south",
     "lga_ids": [
       "NG-CR-CALABAR-SOUTH",
-      "NG-CR-AKPABUYO"
+      "NG-CR-AKPABUYO",
+      "NG-CR-BAKASSI"
     ],
-    "verify": true,
-    "note": "Bakassi has no LGA in this dataset (ceded to Cameroon in 2008; no longer listed as a Cross River LGA)."
+    "verify": true
   },
   {
     "id": "cross-river-04",

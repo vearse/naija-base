@@ -7,7 +7,7 @@
 | Metric | Count |
 |--------|------:|
 | States + FCT | 37 |
-| Local Government Areas | 773 |
+| Local Government Areas | 774 |
 | Wards | 8,809 |
 | Ward-to-LGA index entries | 8,809 |
 | Polling units (aggregate count) | 176,623 |
@@ -30,7 +30,7 @@
 | Bayelsa | South South | 8 | 105 | 2,244 | 2 | 0 |
 | Benue | North Central | 23 | 276 | 5,069 | 3 | 0 |
 | Borno | North East | 27 | 312 | 5,071 | 4 | 0 |
-| Cross River | South South | 17 | 193 | 3,268 | 4 | 1 |
+| Cross River | South South | 18 | 193 | 3,268 | 4 | 1 |
 | Delta | South South | 25 | 270 | 5,862 | 5 | 1 |
 | Ebonyi | South East | 13 | 171 | 2,940 | 1 | 0 |
 | Edo | South South | 18 | 192 | 4,519 | 3 | 0 |
@@ -60,4 +60,4 @@
 | Yobe | North East | 17 | 178 | 2,809 | 4 | 0 |
 | Zamfara | North West | 14 | 147 | 3,529 | 2 | 0 |
 
-**Totals:** 37 states/FCT, 773 LGAs, 8,809 wards, 176,623 polling units.
+**Totals:** 37 states/FCT, 774 LGAs, 8,809 wards, 176,623 polling units.
